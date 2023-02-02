@@ -94,6 +94,10 @@ body {
     height: 750px;
 }
 
+@media only screen and (max-width: 570px) {
+    
+}
+
 .glow span {
     position: absolute;
     top: calc(80px * var(--i));
