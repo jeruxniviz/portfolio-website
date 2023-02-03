@@ -1,3 +1,8 @@
+html {
+    --scrollbarBG: #363636;
+    --thumbBG: #4d3737;
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +10,22 @@
     font-family: Basic;
 }
 
+body::-webkit-scrollbar{
+    width: 20px;
+}
+
 body {
     min-height: 100vh;
     background: #000000;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--thumbBG);
+    border-radius: 4px;
 }
 
 .containerbg {
@@ -45,6 +63,8 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
+
 
 .hi {
     width: 100%;
@@ -158,6 +178,10 @@ body {
 .footerd {
     background: #26292b;
     height: 90vh;
+}
+.jkl{
+    background: #26292b;
+    height: 100vh;
 }
 
 .inputbox{
